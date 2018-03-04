@@ -1,0 +1,622 @@
+@import "configs/base"
+@import "configs/typography"
+@import "configs/colors"
+
+///////////////////////////////// Default /////////////////////////////////
+
+.navbarWrapper, .logo, .navbar, .navBarUlWrapper, .nav-link, .mainContent, .leftPic, .rightPic,
+.carouselWrapper, .next, .previous, .contentWrapper, .textWrapper, .topicHeading, .topicTop, .description,
+.surfTrainingPic, .contactWrapper, .moreInfo
+    @extend %clearPadding
+
+.nav-link
+    @extend %fs9ls6  
+    font-family: $font-spartan
+    color: rgba(11, 12, 17, 0.902)!important
+    font-weight: bold
+
+// .navbarWrapper
+//     top: 0
+//     z-index: 100
+//     position: fixed
+//     width: 100%
+
+.submitButton
+    cursor: pointer
+
+.topicHeading
+    @extend %textBold
+    font-family: $font-playfair
+    white-space: nowrap
+    position: relative
+
+.imageWrapper
+    @extend %clearPadding
+
+.boxshadow
+    box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2)
+
+.topicTop
+    @extend %textBold
+    @extend %blueTopic    
+    @extend %fs9ls6  
+    font-family: $font-spartan
+
+.textWrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    z-index: 99
+
+.contentBox
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    padding: 0
+    top: 0px
+    bottom: 0px
+
+.description
+    font-family: $font-poppins
+    color: rgb(143, 143, 143)
+
+.numberBottom
+    @extend %textBold
+    font-family: $font-spartan
+    letter-spacing: 15px
+    padding-left: 10px
+
+.blueFont
+    @extend %blueTopic
+
+.surfingIs
+    font-family: $font-playfair
+    color: rgba(51, 51, 51, 0.902)
+    text-align: center
+
+.byWho
+    @extend %textBold   
+    @extend %fs9ls6
+    font-family: $font-spartan
+    text-align: center
+    padding-top: 30px
+    padding-bottom: 58px
+
+.lineControl 
+    background-color: rgb(93, 168, 239)
+    width: 2px
+
+.playBtnWrapper
+    position: absolute
+    top: 0
+    left: 40%
+    width: 20%
+    height: 100%
+    text-align: center    
+    .playBtn
+        margin: 0 auto
+        position: relative
+        top: 45%
+        z-index: 1
+        width: 100%
+        height: auto
+    
+.picWrapper
+    .picSurf, 
+        width: 100%
+        height: auto
+
+.textWrapper
+    .text
+        @extend %greyInfo
+        font-family: $font-poppins
+        font-size: 14px
+        line-height: 1.714
+    
+.moreInfo
+    @extend %textBold
+    @extend %fs9ls6  
+    a 
+        @extend %blackLight  
+        border-bottom: 2px solid #8cc1f3
+        padding-bottom: 10px
+        text-decoration: none
+    
+.info
+    .description
+        margin: 0
+    
+.shopTopic
+    text-align: center
+    
+.surfboards
+    @extend %textBold
+    @extend %blackLight    
+    font-family: $font-playfair 
+    font-size: 42px
+    margin-top: -10px
+
+.shop
+    @extend %textBold
+    @extend %blueTopic    
+    font-family: $font-spartan
+    @extend %fs9ls6   
+
+.carouselWrapper
+    overflow-x: scroll
+    overflow-y: hidden
+    width: 100%
+    height: 500px
+    z-index: 99
+
+.carouselItem
+    @extend %clearPadding
+    position: absolute
+
+.carouselItem:nth-child(2) 
+    margin-left: 437px
+
+.carouselItem:nth-child(3) 
+    margin-left: 873px    
+
+.plateBoard
+    background-color: rgb(236, 236, 236)
+    position: absolute
+    width: 250px
+    text-align: center
+    margin-left: 7px 
+
+.plateBoard
+    img
+        position: relative
+        top: -60%
+
+.boardInfo
+    position: absolute
+    z-index: 10        
+    margin-left: 216px
+    margin-top: 83px
+
+.boardType
+    display: inline-block
+    font-family: $font-poppins
+    font-size: 12px
+    color: rgb(122, 122, 122)
+    letter-spacing: 5px
+
+.boardName
+    display: inline-block
+    font-family: $font-playfair
+    @extend %blackLight
+    font-size: 26px
+
+.boardPrice
+    display: inline-block
+    font-family: $font-poppins
+    padding-left: 54px
+    margin-top: 34px
+    color: rgb(206, 96, 168)
+
+.boardBuy
+    @extend  %textBold  
+    @extend  %fs9ls6
+    @extend  %blackLight  
+    font-family: $font-spartan
+    padding-left: 55px
+
+%pf42bbl
+    @extend %textBold
+    @extend %blackLight    
+    @extend %pf42   
+
+.trainingTopic
+    @extend %pf42bbl
+
+.pointbreakTopic
+    @extend %pf42bbl
+    padding-left: 75px
+
+.contentDesc
+    display: inline-block
+    @extend %pp14
+    @extend %greyInfo
+    line-height: 1.714
+
+.underline
+    border-bottom: 2px solid #8cc1f3
+    padding-bottom: 10px
+
+.joinHead
+    @extend %pf42bbl
+    @extend %blackLight
+    text-align: center
+
+.joinWrapper 
+    .contentDesc
+        text-align: center
+
+.emailSubmit
+    padding-top: 40px
+
+input
+    width: 590px
+    height: 50px
+    padding-left: 40px
+    border: none
+    background-color: #dcdcdc
+
+input::-webkit-input-placeholder 
+    letter-spacing: 8px
+
+.email
+    @extend %fs9ls6   
+    color: rgba(51, 51, 51, 0.902)
+    @extend %textBold
+    text-transform: uppercase    
+    @extend %flexcenter
+    @extend %clearPadding
+
+.button 
+    background-color: rgb(93, 168, 239)
+    width: 50px
+    height: 50px
+    @extend %flexcenter
+    @extend %clearPadding
+
+.addressTopic
+    @extend %fs9ls6 
+    @extend %textBold
+    font-family: $font-spartan
+    color: rgba(11, 12, 17, 0.271)
+    text-transform: uppercase
+    
+.address
+    font-family: $font-playfair 
+    @extend %blackLight
+    line-height: 1.438    
+    font-weight: bold  
+
+.addressWrapper 
+    .moreInfo 
+        a
+            @extend %blueTopic
+
+.footerLogo
+    text-align: center
+
+.footerNav 
+    @extend %flexcenter 
+    padding-top: 40px
+    .nav-link
+        margin-left: 45px
+
+///////////////////////////////// Min 320 - Max 768 /////////////////////////////////
+
+@media screen and (min-width: 320px) and (max-width: 768px) 
+    .surfersWrapper
+        padding: 5px 15px
+    
+    .nav-link
+        line-height: 3
+        text-align: center
+    
+    .mainContent
+        padding-top: 15px!important
+    
+    .topicHeading
+        font-size: 22px
+
+    .imageWrapper
+        padding-top: 15px
+        img
+            width: 100%
+            height: auto
+    
+    .description
+        font-size: 9px  
+        margin-top: -20px
+    
+    .numberBottom
+        font-size: 7px 
+        padding: 0
+        text-align: center
+    
+    .surfingIs
+        font-size: 14px
+        padding-top: 50px
+    
+    .byWho
+        font-size: 7px!important
+        padding-top: 10px
+        padding-bottom: 10px
+    
+    .lineControl 
+        height: 50px
+    
+    .rightPic
+        padding-top: 20px!important
+    
+    .textWrapper
+        .text
+            font-size: 9px
+            padding-top: 10px
+            text-align: center
+        
+    .moreInfo
+        margin-top: 10px
+        text-align: center
+        font-size: 10px!important
+        a
+            font-size: 6px
+            padding-bottom: 5px
+        
+    .info
+        padding: 15px
+        .moreInfo 
+            text-align: center
+
+    .surfboards
+        font-size: 22px
+        padding-bottom: 30px
+
+    .shopTopic
+        padding-top: 40px
+        .shop
+            font-size: 7px
+            padding-bottom: 5px
+    
+    .pointbreakWrapper, .trainingWrapper
+        padding-top: 30px
+
+    .pointbreakWrapper
+        padding-bottom: 20px 
+
+    .pointbreakWrapper .row, .trainingWrapper .row
+        margin: 0
+
+    .trainingTopic
+        font-size: 25px
+        padding-top: 15px
+        text-align: center  
+
+    .contentDesc
+        padding-top: 15px 
+
+    .joinHead
+        font-size: 22px 
+
+    .email
+        font-size: 14px 
+
+    .contactWrapper
+        margin-top: 50px
+
+    .addressTopic
+        text-align: center
+
+    .address 
+        font-size: 12px
+        padding: 0
+        text-align: center
+        padding-top: 10px
+    
+    .addressTopic
+        padding-top: 20px
+
+    .footer
+        padding-top: 50px
+    
+    .footerNav 
+        padding-top: 20px
+        .nav-link
+            letter-spacing: 2px
+            margin-left: 15px
+
+///////////////////////////////// Min 1024 - Max 1440 /////////////////////////////////
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) 
+    .surfersWrapper
+        padding: 38px 115px
+    
+    .navbar 
+        .logo
+            margin-left: -7px
+            margin-right: 7px
+
+    .navbar-nav
+        li
+            padding-right: 45px
+        
+    .mainContent
+        padding-top: 45px!important
+
+    .topicHeading
+        font-size: 62px
+    
+    .imageWrapper
+        img
+            width: 100%
+            height: auto
+
+    .contentBox
+        position: absolute
+    
+    .description
+        font-size: 14px  
+        margin-top: -15px
+        line-height: 1.714
+    
+    .numberBottom
+        font-size: 10px 
+        position: absolute
+        bottom: 0
+        left: 0
+        letter-spacing: 15px
+        padding-left: 10px
+
+    .surfingIs
+        font-size: 26px
+        padding-top: 190px
+    
+    .byWho
+        padding-top: 30px
+        padding-bottom: 58px
+    
+    .lineControl 
+        height: 100px
+    
+    .textWrapper
+        .text
+            font-size: 14px
+            line-height: 1.714
+
+    .moreInfo
+        margin-top: 44px
+
+    .leftPic
+        .picWrapper
+            .picSurf
+                width: 100%
+                height: auto
+                margin-left: 50px
+                position: relative
+
+    .rightPic
+        .picWrapper
+            .picSurf
+                width: 100%
+                height: auto
+                margin-left: -50px
+                margin-top: 35px
+                position: relative
+
+    .playBtnWrapper
+        .playBtn
+            top: 35%
+            left: -50%
+    
+    .info
+        padding-top: 20px
+    
+    .mediaWrapper
+        padding-top: 50px
+
+    .shopTopic
+        padding-top: 200px
+    
+    .boardSellWrapper
+        .moreInfo
+            text-align: center
+            margin-top: 80px
+    
+    .trainingWrapper
+        padding-top: 175px
+    
+    .trainingWrapper
+        .contentWrapper
+            position: absolute
+            .contentDesc
+                margin-right: 100px
+                padding-top: 40px
+    
+    .pointbreakWrapper
+        padding-top: 120px
+        padding-bottom: 100px
+        
+    .pointbreakWrapper
+        .trainingTopic, .contentDesc, .moreInfo
+            margin-left: 75px
+
+    .pointbreakWrapper
+        .contentDesc
+            padding-top: 40px
+
+    .joinWrapper
+        padding-top: 50px
+
+    .email
+        font-size: 18px 
+
+    .contactWrapper
+        margin-top: 150px
+    
+    .addressTopic
+        padding: 105px 60px 0 40px
+        .addressWrapper
+            padding-left: 90px 
+
+    .address
+        font-size: 32px
+        padding: 60px 0 0 90px
+
+    .addressWrapper .moreInfo
+        margin-left: 40px
+
+    .footer
+        padding-top: 100px
+    
+    .footerNav .nav-link
+        margin-left: 45px
+
+///////////////////////////////// Min 1440 /////////////////////////////////
+
+@media screen and (min-width: 1440px) 
+    .leftPic
+        .picWrapper
+            .picSurf
+                width: 613px
+                height: 370px
+                margin-left: -7px
+
+    .rightPic
+        .picWrapper
+            .picSurf
+                margin-left: -93px
+                margin-top: 45px
+                width: 706px
+                height: 549px
+
+    .info
+        padding-top: 60px
+        .description
+            margin-right: 50px
+
+    .playBtnWrapper
+        .playBtn
+            top: 50%
+            left: -30%
+
+    .surfboards
+        padding-bottom: 160px
+    
+    .carouselWrapper
+        margin-left: -7px
+        
+    .trainingWrapper
+        .imageWrapper
+            text-align: right
+            img
+                width: 762px
+                height: 439px
+            
+    .trainingTopic
+        padding-top: 90px    
+
+    .trainingWrapper
+        .contentWrapper
+            position: absolute
+            margin-left: 77px
+            .contentDesc
+                margin-right: 100px
+                padding-top: 40px
+    
+    .contactWrapper
+        .imageWrapper
+            img
+                margin-left: -150px
+                padding-left: 40px
+                width: 753px
+                height: 475px
+
+
